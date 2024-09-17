@@ -1,0 +1,16 @@
+{
+  "blacklist": [
+    {
+      "domain": "doubleclick.net"
+    },
+    {
+      "domain": "google.com",
+      "path": "/recaptcha"
+    }
+  ],
+  "outputPath": "screenshot.png",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  }
+}

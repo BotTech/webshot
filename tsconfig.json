@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "lib": ["es6", "dom"],
+    "target": "ES6",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "outDir": "./dist",
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

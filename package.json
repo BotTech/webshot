@@ -1,15 +1,27 @@
 {
-  "name": "puppeteer-screenshot",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "name": "webshot",
+  "version": "0.1.0",
+  "description": "Takes a screenshot of a webpage including any pesky iframes with cross origin content.",
+  "author": "Jason Pickens <jasonpickensnz@gmail.com>",
   "license": "ISC",
-  "description": "",
+  "keywords": [
+    "screenshot"
+  ],
+  "type:": "commonjs",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "node esbuild.config.mjs",
+    "start": "node .",
+    "clean": "rm -rf dist"
+  },
   "dependencies": {
+    "commander": "^12.1.0",
     "puppeteer": "^23.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.23.1",
+    "fast-glob": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
   }
 }
