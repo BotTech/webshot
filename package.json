@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "description": "Takes a screenshot of a webpage including any pesky iframes with cross origin content.",
   "author": "Jason Pickens <jasonpickensnz@gmail.com>",
-  "license": "ISC",
   "keywords": [
     "screenshot"
   ],
+  "homepage": "https://github.com/BotTech/webshot",
+  "bugs": "https://github.com/BotTech/webshot/issues",
+  "license": "ISC",
   "type:": "commonjs",
   "main": "dist/src/index.js",
   "exports": {
