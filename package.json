@@ -1,6 +1,6 @@
 {
   "name": "@bottech/webshot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Takes a screenshot of a webpage including any pesky iframes with cross origin content.",
   "author": "Jason Pickens <jasonpickensnz@gmail.com>",
   "keywords": [

@@ -1,13 +1,22 @@
-import { program } from "commander";
+import { InvalidArgumentError, program } from "commander";
 import { loadConfig, defaultConfig, MinimumConfig } from "./config";
+
+function myParseInt(value: string) {
+  // parseInt takes a string and a radix
+  const parsedValue = parseInt(value, 10);
+  if (isNaN(parsedValue)) {
+    throw new InvalidArgumentError('Not a number.');
+  }
+  return parsedValue;
+}
 
 export async function parseArguments(): Promise<[MinimumConfig, string]> {
   program
     .description("Takes a screenshot of a webpage including any pesky iframes with cross origin content.")
-    .version("0.1.0")
+    .version("0.1.1")
     .option("-o, --output <path>", "Output file path.", "screenshot.png")
-    .option("-w, --width <number>", "Viewport width.", parseInt, 1920)
-    .option("-h, --height <number>", "Viewport height.", parseInt, 1080)
+    .option("-w, --width <number>", "Viewport width.", myParseInt, 1920)
+    .option("-h, --height <number>", "Viewport height.", myParseInt, 1080)
     .option("-c, --config <path>", "Path to a config file.")
     .argument("<url>", "URL of the page to screenshot.")
     .parse(process.argv);
