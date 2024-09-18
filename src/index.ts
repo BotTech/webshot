@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Browser, Frame } from "puppeteer";
 import puppeteer from "puppeteer";
 import { isBlacklisted } from "./blacklist";
