@@ -11,6 +11,7 @@
   "license": "ISC",
   "type:": "commonjs",
   "main": "dist/src/index.js",
+  "bin": "dist/src/index.js",
   "exports": {
     ".": "./dist/src/index.js",
     "./*": "./dist/src/*.js"
