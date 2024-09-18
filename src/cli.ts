@@ -13,7 +13,7 @@ function myParseInt(value: string) {
 export async function parseArguments(): Promise<[MinimumConfig, string]> {
   program
     .description("Takes a screenshot of a webpage including any pesky iframes with cross origin content.")
-    .version("0.1.1")
+    .version("0.1.2")
     .option("-o, --output <path>", "Output file path.", "screenshot.png")
     .option("-w, --width <number>", "Viewport width.", myParseInt, 1920)
     .option("-h, --height <number>", "Viewport height.", myParseInt, 1080)
