@@ -1,5 +1,5 @@
 {
-  "name": "webshot",
+  "name": "@bottech/webshot",
   "version": "0.1.0",
   "description": "Takes a screenshot of a webpage including any pesky iframes with cross origin content.",
   "author": "Jason Pickens <jasonpickensnz@gmail.com>",
@@ -9,6 +9,10 @@
   ],
   "type:": "commonjs",
   "main": "dist/src/index.js",
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./*": "./dist/src/*.js"
+  },
   "scripts": {
     "build": "node esbuild.config.mjs",
     "start": "node .",
